@@ -4,7 +4,7 @@
 
 책 목록  화면|책 등록 화면 
 ---|---
-<img src=https://user-images.githubusercontent.com/39197978/164747403-a83cddde-d822-4bf5-9e56-ab62ac138b77.png width=300>|<img src=https://user-images.githubusercontent.com/39197978/164748168-0ba686c9-d215-4929-9f84-d82b164498b1.png width=270>
+<img src=https://user-images.githubusercontent.com/39197978/164747403-a83cddde-d822-4bf5-9e56-ab62ac138b77.png width=300>|<img src=https://user-images.githubusercontent.com/39197978/164748503-9eb88df1-a568-4002-8554-d8f3c45eda4f.png width=275>
 
 
 ### 책 목록  화면  
