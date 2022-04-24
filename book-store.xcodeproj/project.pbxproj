@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		649F1E462813BDC0000332D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649F1E452813BDC0000332D1 /* AppDelegate.swift */; };
 		649F1E482813BDC0000332D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649F1E472813BDC0000332D1 /* SceneDelegate.swift */; };
-		649F1E4A2813BDC0000332D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649F1E492813BDC0000332D1 /* ViewController.swift */; };
+		649F1E4A2813BDC0000332D1 /* BookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649F1E492813BDC0000332D1 /* BookListViewController.swift */; };
 		649F1E4D2813BDC0000332D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 649F1E4B2813BDC0000332D1 /* Main.storyboard */; };
 		649F1E502813BDC0000332D1 /* book_store.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 649F1E4E2813BDC0000332D1 /* book_store.xcdatamodeld */; };
 		649F1E522813BDC1000332D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649F1E512813BDC1000332D1 /* Assets.xcassets */; };
@@ -40,7 +40,7 @@
 		649F1E422813BDC0000332D1 /* book-store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "book-store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		649F1E452813BDC0000332D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		649F1E472813BDC0000332D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		649F1E492813BDC0000332D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		649F1E492813BDC0000332D1 /* BookListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListViewController.swift; sourceTree = "<group>"; };
 		649F1E4C2813BDC0000332D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		649F1E4F2813BDC0000332D1 /* book_store.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = book_store.xcdatamodel; sourceTree = "<group>"; };
 		649F1E512813BDC1000332D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 			children = (
 				649F1E452813BDC0000332D1 /* AppDelegate.swift */,
 				649F1E472813BDC0000332D1 /* SceneDelegate.swift */,
-				649F1E492813BDC0000332D1 /* ViewController.swift */,
+				649F1E492813BDC0000332D1 /* BookListViewController.swift */,
 				649F1E4B2813BDC0000332D1 /* Main.storyboard */,
 				649F1E512813BDC1000332D1 /* Assets.xcassets */,
 				649F1E532813BDC1000332D1 /* LaunchScreen.storyboard */,
@@ -261,7 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				649F1E4A2813BDC0000332D1 /* ViewController.swift in Sources */,
+				649F1E4A2813BDC0000332D1 /* BookListViewController.swift in Sources */,
 				649F1E462813BDC0000332D1 /* AppDelegate.swift in Sources */,
 				649F1E502813BDC0000332D1 /* book_store.xcdatamodeld in Sources */,
 				649F1E482813BDC0000332D1 /* SceneDelegate.swift in Sources */,
