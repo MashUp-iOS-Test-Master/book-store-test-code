@@ -78,6 +78,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		645914F7281597A900A571CD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				649F1E492813BDC0000332D1 /* BookListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		645914F8281597B100A571CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				649F1E532813BDC1000332D1 /* LaunchScreen.storyboard */,
+				649F1E4B2813BDC0000332D1 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		645914F9281597C200A571CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		645914FA281597F600A571CD /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				649F1E512813BDC1000332D1 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		645914FB2815980700A571CD /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				649F1E452813BDC0000332D1 /* AppDelegate.swift */,
+				649F1E472813BDC0000332D1 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		649F1E392813BDC0000332D1 = {
 			isa = PBXGroup;
 			children = (
@@ -101,12 +142,11 @@
 		649F1E442813BDC0000332D1 /* book-store */ = {
 			isa = PBXGroup;
 			children = (
-				649F1E452813BDC0000332D1 /* AppDelegate.swift */,
-				649F1E472813BDC0000332D1 /* SceneDelegate.swift */,
-				649F1E492813BDC0000332D1 /* BookListViewController.swift */,
-				649F1E4B2813BDC0000332D1 /* Main.storyboard */,
-				649F1E512813BDC1000332D1 /* Assets.xcassets */,
-				649F1E532813BDC1000332D1 /* LaunchScreen.storyboard */,
+				645914FB2815980700A571CD /* Application */,
+				645914F9281597C200A571CD /* Model */,
+				645914F7281597A900A571CD /* Controller */,
+				645914F8281597B100A571CD /* View */,
+				645914FA281597F600A571CD /* Resource */,
 				649F1E562813BDC1000332D1 /* Info.plist */,
 				649F1E4E2813BDC0000332D1 /* book_store.xcdatamodeld */,
 			);
