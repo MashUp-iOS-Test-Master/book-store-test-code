@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		645914FD28159A0F00A571CD /* BookDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645914FC28159A0F00A571CD /* BookDetailTableViewCell.swift */; };
 		649F1E462813BDC0000332D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649F1E452813BDC0000332D1 /* AppDelegate.swift */; };
 		649F1E482813BDC0000332D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649F1E472813BDC0000332D1 /* SceneDelegate.swift */; };
 		649F1E4A2813BDC0000332D1 /* BookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649F1E492813BDC0000332D1 /* BookListViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		645914FC28159A0F00A571CD /* BookDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailTableViewCell.swift; sourceTree = "<group>"; };
 		649F1E422813BDC0000332D1 /* book-store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "book-store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		649F1E452813BDC0000332D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		649F1E472813BDC0000332D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				649F1E492813BDC0000332D1 /* BookListViewController.swift */,
+				645914FC28159A0F00A571CD /* BookDetailTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				645914FD28159A0F00A571CD /* BookDetailTableViewCell.swift in Sources */,
 				649F1E4A2813BDC0000332D1 /* BookListViewController.swift in Sources */,
 				649F1E462813BDC0000332D1 /* AppDelegate.swift in Sources */,
 				649F1E502813BDC0000332D1 /* book_store.xcdatamodeld in Sources */,

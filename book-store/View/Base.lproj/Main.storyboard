@@ -11,13 +11,13 @@
         <!--나의 책 목록-->
         <scene sceneID="sRb-L1-Pzv">
             <objects>
-                <tableViewController id="xD1-Ub-ej5" sceneMemberID="viewController">
+                <tableViewController id="xD1-Ub-ej5" customClass="BookListViewController" customModule="book_store" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Ylx-fn-obk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="76" id="LY6-Gd-llJ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="76" id="LY6-Gd-llJ" customClass="BookDetailTableViewCell" customModule="book_store" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="76"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LY6-Gd-llJ" id="Zw3-54-P0f">
@@ -59,6 +59,12 @@
                                         <constraint firstItem="iuJ-FK-uTj" firstAttribute="centerY" secondItem="Zw3-54-P0f" secondAttribute="centerY" id="kE7-Cm-Me2"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="category" destination="CyH-wW-9dw" id="VMU-ay-2ql"/>
+                                    <outlet property="price" destination="szG-X9-s7N" id="3w7-4f-35K"/>
+                                    <outlet property="publicationDate" destination="PQb-Nu-bhu" id="ICL-4P-I9N"/>
+                                    <outlet property="title" destination="ZFh-7H-ciU" id="oTN-4k-WD0"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -68,7 +74,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="나의 책 목록" id="DQn-u9-wr2">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="Vge-ep-2Kv">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="KIu-Bs-cld" userLabel="등록">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="KIu-Bs-cld" userLabel="등록">
                                 <rect key="frame" x="302" y="5" width="92" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -130,7 +136,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="3qb-N5-QSL">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="tEl-eR-WT0">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="fQv-EP-Ssp">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="fQv-EP-Ssp">
                                 <rect key="frame" x="302" y="5" width="92" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
