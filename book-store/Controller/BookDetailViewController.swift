@@ -19,6 +19,7 @@ class BookDetailViewController: UIViewController {
         userDefault.set(self.bookTitle.text, forKey: "BookTitle")
         userDefault.set(self.publicationDate, forKey: "PublicationDate")
         userDefault.set(self.price, forKey: "Price")
+        userDefault.set(self.category, forKey: "Category")
         
         self.presentingViewController?.dismiss(animated: true)
     }
