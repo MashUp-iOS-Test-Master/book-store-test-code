@@ -34,12 +34,22 @@ final class BookListViewController: UITableViewController {
     }
 }
 
+
+extension BookListViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        guard let cell: BookDetailTableViewCell = tableView.dequeueReusableCell(withIdentifier: "BookDetailTableViewCell") as? BookDetailTableViewCell else {
+            return BookDetailTableViewCell()
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            cell.updateUI()
+            
+        }
+        return cell
     }
     
     override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
