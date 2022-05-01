@@ -8,7 +8,16 @@
 import UIKit
 
 final class BookListViewController: UITableViewController {
-
+    lazy var activityIndicator: UIActivityIndicatorView = {
+        let activityIndicator = UIActivityIndicatorView()
+        activityIndicator.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+        activityIndicator.center = self.view.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.startAnimating()
+        
+        return activityIndicator
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         makeTableFooterView()
@@ -20,6 +29,10 @@ final class BookListViewController: UITableViewController {
     
     }
     
+    func showIndicatorView() {
+        self.view.addSubview(self.activityIndicator)
+        self.activityIndicator.startAnimating()
+    }
     private func makeTableFooterView() {
         let footer = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 150))
         
@@ -45,8 +58,10 @@ extension BookListViewController {
             return BookDetailTableViewCell()
         }
         
+        showIndicatorView()
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            cell.updateUI()
+            self.activityIndicator.stopAnimating()
             
         }
         return cell
