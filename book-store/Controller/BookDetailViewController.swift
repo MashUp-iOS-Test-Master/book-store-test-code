@@ -23,6 +23,14 @@ final class BookDetailViewController:
     }
     
     @IBAction private func category(_ sender: Any) {
+        makeMenu()
+    }
+    
+    private func setCategoryValue(action: UIAlertAction) {
+        category.titleLabel?.text = action.title
+    }
+    
+    private func makeMenu() {
         let alertMessage = UIAlertController(title: "원하는 카테고리 선택하세요", message: nil, preferredStyle: .actionSheet)
         alertMessage.addAction(UIAlertAction(title: "소설", style: .default, handler: setCategoryValue))
         alertMessage.addAction(UIAlertAction(title: "기술", style: .default, handler: setCategoryValue))
