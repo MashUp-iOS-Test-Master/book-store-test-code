@@ -40,10 +40,6 @@ final class BookDetailViewController:
         
         present(alertMessage, animated: true)
     }
-    
-    private func setCategoryValue(action: UIAlertAction) {
-        category.titleLabel?.text = action.title
-    }
 }
 
 extension BookDetailViewController {
