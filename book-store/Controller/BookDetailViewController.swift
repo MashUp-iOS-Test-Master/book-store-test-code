@@ -7,21 +7,18 @@
 
 import UIKit
 
-final class BookDetailViewController: UIViewController {
+final class BookDetailViewController:
+    UIViewController {
+    var allBookInfo: [BookInfo]?
     @IBOutlet private weak var bookTitle: UITextField!
     @IBOutlet private weak var publicationDate: UITextField!
     @IBOutlet private weak var price: UITextField!
     @IBOutlet private weak var category: UIButton!
     
     @IBAction func done(_ sender: UIButton) {
-        let userDefault = UserDefaults.standard
+        addBookInfo()
         
-        userDefault.set(self.bookTitle.text, forKey: "BookTitle")
-        userDefault.set(self.publicationDate, forKey: "PublicationDate")
-        userDefault.set(self.price, forKey: "Price")
-        userDefault.set(self.category, forKey: "Category")
-        
-        self.presentingViewController?.dismiss(animated: true)
+        navigationController?.popViewController(animated: true)
     }
     
     @IBAction func category(_ sender: Any) {
@@ -37,5 +34,26 @@ final class BookDetailViewController: UIViewController {
     
     private func setCategoryValue(action: UIAlertAction) {
         category.titleLabel?.text = action.title
+    }
+}
+
+extension BookDetailViewController {
+    
+    private func saveBookData(info: BookInfo) {
+        while allBookInfo != nil {
+            allBookInfo?.append(info)
+        }
+        UserDefaults.standard.setValue(try? PropertyListEncoder().encode(allBookInfo), forKey: "userInfo")
+    }
+    
+    private func addBookInfo() {
+        let title = bookTitle.text ?? "0"
+        let publicationDate = publicationDate.text ?? "0"
+        let price = price.text ?? "0"
+        let category = category.titleLabel?.text ?? "0"
+        
+        let user = BookInfo(title: title, publicationDate: publicationDate, price: price, category: category)
+        
+        saveBookData(info: user)
     }
 }

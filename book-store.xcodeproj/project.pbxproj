@@ -19,6 +19,7 @@
 		649F1E602813BDC1000332D1 /* book_storeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649F1E5F2813BDC1000332D1 /* book_storeTests.swift */; };
 		649F1E6A2813BDC1000332D1 /* book_storeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649F1E692813BDC1000332D1 /* book_storeUITests.swift */; };
 		649F1E6C2813BDC1000332D1 /* book_storeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649F1E6B2813BDC1000332D1 /* book_storeUITestsLaunchTests.swift */; };
+		64E90077281F8FE500FD415B /* BookInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E90076281F8FE500FD415B /* BookInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		649F1E652813BDC1000332D1 /* book-storeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "book-storeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		649F1E692813BDC1000332D1 /* book_storeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = book_storeUITests.swift; sourceTree = "<group>"; };
 		649F1E6B2813BDC1000332D1 /* book_storeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = book_storeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		64E90076281F8FE500FD415B /* BookInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		645914F9281597C200A571CD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				64E90076281F8FE500FD415B /* BookInfo.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				649F1E462813BDC0000332D1 /* AppDelegate.swift in Sources */,
 				6459150B2816BE4800A571CD /* BookDetailViewController.swift in Sources */,
 				649F1E502813BDC0000332D1 /* book_store.xcdatamodeld in Sources */,
+				64E90077281F8FE500FD415B /* BookInfo.swift in Sources */,
 				649F1E482813BDC0000332D1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
