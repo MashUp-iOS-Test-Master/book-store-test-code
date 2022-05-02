@@ -21,4 +21,15 @@ final class BookDetailTableViewCell: UITableViewCell {
         
         return formattedPrice
     }
+    
+    private func makeDateFormatter(publicationDate: String) -> Date {
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        
+        guard let date = dateFormatter.date(from: publicationDate) else { return Date() }
+        
+        return date
+    }
+    
 }
