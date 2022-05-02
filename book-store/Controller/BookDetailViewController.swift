@@ -10,18 +10,19 @@ import UIKit
 final class BookDetailViewController:
     UIViewController {
     var allBookInfo: [BookInfo]?
+    
     @IBOutlet private weak var bookTitle: UITextField!
     @IBOutlet private weak var publicationDate: UITextField!
     @IBOutlet private weak var price: UITextField!
     @IBOutlet private weak var category: UIButton!
     
-    @IBAction func done(_ sender: UIButton) {
+    @IBAction private func done(_ sender: UIButton) {
         addBookInfo()
         
         navigationController?.popViewController(animated: true)
     }
     
-    @IBAction func category(_ sender: Any) {
+    @IBAction private func category(_ sender: Any) {
         let alertMessage = UIAlertController(title: "원하는 카테고리 선택하세요", message: nil, preferredStyle: .actionSheet)
         alertMessage.addAction(UIAlertAction(title: "소설", style: .default, handler: setCategoryValue))
         alertMessage.addAction(UIAlertAction(title: "기술", style: .default, handler: setCategoryValue))
@@ -55,5 +56,11 @@ extension BookDetailViewController {
         let user = BookInfo(title: title, publicationDate: publicationDate, price: price, category: category)
         
         saveBookData(info: user)
+    }
+    
+    func loadAllBookInfo() {
+        if let data = UserDefaults.standard.value(forKey: "userInfo") as? Data {
+            allBookInfo = try? PropertyListDecoder().decode(Array<BookInfo>.self, from: data)
+        }
     }
 }
